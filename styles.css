@@ -1,0 +1,219 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #222;
+    color: #f2f2f2;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+}
+
+.container .header {
+    padding: 2rem;
+    text-align: center;
+    background-color: #1f1c1c;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    box-shadow:
+        0px 1px 1px #07b9f9,
+        0px 2px 1px #d62f26;
+}
+
+header .header-title {
+    font-size: 3em;
+    text-transform: uppercase;
+    background: linear-gradient(55deg, #07b9f9, #e34141);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: 600;
+}
+
+.container .form {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    background-color: #333;
+    border-radius: 0.5rem;
+    box-shadow: 0px 0px 0px 1px #08a5d0;
+    margin-top: 20vh;
+}
+
+form .form-title {
+    font-size: 2em;
+    margin-bottom: 3rem;
+    color: #07b9f9;
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: 200;
+}
+
+form .form-label {
+    font-size: 1.5em;
+    margin-bottom: 1rem;
+}
+
+.form .form-input {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: #333;
+    font-size: 1em;
+}
+
+.form-input .input-label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    color: #07b9f9;
+    font-size: 1.2em;
+}
+
+.form-input input {
+    width: 100%;
+    padding: 0.5rem;
+    text-align: center;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: #444;
+    color: #d62f26;
+    text-shadow: 1px 1px 1px #07b9f9;
+    font-size: 1.9em;
+    outline: none;
+}
+
+.form-input input:focus {
+    outline: 1px solid #26cad6;
+}
+
+
+.form .form-decision {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: .5rem;
+    padding: 0.5rem;
+}
+
+.form-decision button {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: #d62f26;
+    color: #07b9f9;
+    font-size: 1.5em;
+    cursor: pointer;
+    transition: background-color .2s ease;
+}
+
+.form-decision button:active {
+    background-color: #08a5d0;
+    outline: 1px outset #d62f26;
+    color: #e34141;
+}
+
+.form .create {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    padding: 1rem;
+    background-color: #07b9f9;
+    border-radius: 0.5rem;
+    color: #d62f26;
+    font-size: 2em;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+    outline: 1px outset #1f1c1c;
+}
+
+.form .create:active {
+    background-color: #08a5d0;
+    color: #e34141;
+}
+
+
+@media (min-width: 580px) {
+    .container {
+        font-size: 15px;
+    }
+    .container .form {
+        width: 50%;
+        margin-top: 8rem;
+    }
+
+    .form .form-title {
+        font-size: 1.8em;
+    }
+
+    .form-input .input-label {
+        font-size: 1em;
+        margin-bottom: .8em;
+    }
+
+    .form-input input {
+        font-size: 1.2em;
+    }
+
+    .form-decision button {
+        font-size: 1.5em;
+    }
+
+    .form .create {
+        width: 40%;
+        font-size: 1em;
+    }
+}
+
+.container .preview{
+background-color: #333;
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+list-style: none;
+border-radius: 5%;
+}
+
+.preview h3{
+font-size: 3em;
+padding: .1em;
+margin: 1em;
+
+}
+
+.preview ul{
+    background-color: #26bed6;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1em 0 0;
+}
+
+.preview ul li{
+    width: 100%;
+    margin: .1em;
+    padding: 1em;
+    background-color: #444;
+    border-radius: 4%;
+}
